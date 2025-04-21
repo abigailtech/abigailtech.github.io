@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="../assets/images/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="index.html">
+          <img src="../assets/images/LogoBBackground.png" alt="Logo" class="logo-img">
+      </a>
+    </div>  
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+            <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+            <li><a href="project.html" class="nav-link" id="project-link">Projects</a></li>
+        </ul>
+    </nav>   
+    <div class="nav-right">
+        <button class="music-btn" id="musicButton" aria-label="Music Toggle">
+          <i class="fas fa-music"></i>
+        </button>
+        <audio id="backgroundMusic" loop>
+          <source src="../assets/images/passacaglia-medley.mp3" type="audio/mpeg">
+        </audio>
+            <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+            <button class="hamburger">☰</button>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-text-block">
+        <h1>About</h1>
+        <p class="about-text">
+          I am currently a <strong>Software Development Apprentice</strong> at 
+          <span class="highlight">Accenture</span>, currently undergoing <em>the basic training year</em> at Noser Young.
+        </p>
+        <br>
+        <p class="about-text">Here are some technologies I have been working with:</p>
+        <ul class="tech-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>React.js</li>
+          <li>C#</li>
+        </ul>
+        <p class="about-text">
+          Outside of work, I’m interested in music, playing three instruments and reading, 
+          as well as giving private tuition in <em>Physics, Chemistry and Maths</em>.
+        </p>
+      </div>
+    </div>
+  </section>  
+    
+    <section class="experience-section">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="experience-sidebar">
+          <button class="tab-button active" data-target="accenture">ACCENTURE AG</button>
+          <button class="tab-button" data-target="language-school">LANGUAGE SCHOOL</button>
+          <button class="tab-button" data-target="haenseler">HÄNSELER AG SWISS PHARMA</button>
+          <button class="tab-button" data-target="zweifel">ZWEIFEL AG</button>
+          <button class="tab-button" data-target="secondary-school">SECONDARY SCHOOL</button>
+        </div>
+
+      <div class="experience-content">
+        <div class="tab-content active" id="accenture">
+          <h3><span>Software Development Apprentice</span> <span class="at">@ Accenture</span></h3>
+          <p class="date">AUG 2024 - PRESENT</p>
+          <ul>
+            <li>Gained solid knowledge and hands-on experience in Java and C.</li>
+            <li>Completed interdisciplinary training modules in databases, IoT, and backend development.</li>
+          </ul>
+        </div>
+      
+        <div class="tab-content" id="language-school">
+          <h3><span>Internship</span> <span class="at">@ Active language school</span></h3>
+          <p class="date">JAN 2024 - JUL 2024</p>
+          <ul>
+            <li>Developed a digital system for managing teaching materials, providing teachers with fast online access, real-time inventory tracking, and automatic low-stock notifications.</li>
+            <li>Increased efficiency and reduced operating costs by 40% for the language school.</li>
+          </ul>
+        </div>
+      
+        <div class="tab-content" id="haenseler">
+          <h3><span>Laboratory Technician in Chemistry Apprentice</span> <span class="at">@ Hänseler AG Swiss Pharma</span></h3>
+          <p class="date">FEB 2023 - JAN 2024</p>
+          <ul>
+            <li>Research and development of a medical cannabis ointment.</li>
+            <li>Performed syntheses, titrations, and chromatographic analyses.</li>
+          </ul>
+        </div>
+      
+        <div class="tab-content" id="zweifel">
+          <h3><span>Laboratory Technician in Chemistry Apprentice</span> <span class="at">@ Zweifel AG</span></h3>
+          <p class="date">AUG 2021 - DEC 2022</p>
+          <ul>
+            <li>Conducted gas chromatography and ion chromatography, as well as non-aqueous, precipitation, complexometric, redox, and acid-base titrations. Applied UV/Vis, mass spectrometry, and infrared spectroscopy.</li>
+            <li>Responsible for planning and leading full-day workshops for Techgirls.</li>
+          </ul>
+        </div>
+      
+        <div class="tab-content" id="secondary-school">
+          <h3><span>Student</span> <span class="at">@ Secondary School</span></h3>
+          <p class="date">JUN 2018 - APR 2021</p>
+          <ul>
+            <li>Developed responsive websites for small businesses.</li>
+            <li>Built custom WordPress themes and plugins.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025. All rights reserved</p>
+</footer>
+
+  <script src="../assets/js/script.js" defer></script>
+  <script src="../assets/js/menu_color.js"></script>
+  <script src="../assets/js/about_experience.js"></script>
+  <script src="../assets/js/music.js"></script>
+
+</body>
+</html>
